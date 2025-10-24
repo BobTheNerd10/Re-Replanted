@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extra-polish", "extra-polish\extra-polish.csproj", "{7BD66BAA-084F-469F-8BDA-A43422CD5C7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pvz-logging", "pvz-logging\pvz-logging.csproj", "{050509ED-2954-496A-8FBB-CAB1173D1C6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BD66BAA-084F-469F-8BDA-A43422CD5C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD66BAA-084F-469F-8BDA-A43422CD5C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD66BAA-084F-469F-8BDA-A43422CD5C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD66BAA-084F-469F-8BDA-A43422CD5C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{050509ED-2954-496A-8FBB-CAB1173D1C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{050509ED-2954-496A-8FBB-CAB1173D1C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{050509ED-2954-496A-8FBB-CAB1173D1C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{050509ED-2954-496A-8FBB-CAB1173D1C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25B544E9-2EAB-4A74-A989-112E9C046195}
+	EndGlobalSection
+EndGlobal
