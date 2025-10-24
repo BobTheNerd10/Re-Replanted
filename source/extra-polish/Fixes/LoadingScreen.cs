@@ -7,30 +7,33 @@ using UnityEngine;
 
 namespace extra_polish.Fixes
 {
-    internal class LoadingScreen
+    internal static class LoadingScreen
     {
-        public /*override*/ void OnSceneWasInitialized(int buildIndex, string sceneName)
+        public static void Implement()
+        {
+            // TODO, subscribe to the scene initialization event and do the things
+        }
+
+        public static void OnSceneWasInitialized(int buildIndex, string sceneName)
         {
             GameObject LoadBar = GameObject.Find("LoadBarAnimationParent");
 
-            // Iterate through the Load Bar animator components (IE the animator of the loadbar sprouts and zombie head)
-            foreach (UnityEngine.Animator LoadBarObject in LoadBar.GetComponentsInChildren<UnityEngine.Animator>())
-            {
-                /*
-                  
-                Sprout and Zombie positions 
-                -465
-                -245
-                -18
-                 155
-                 290 
 
-                The 4th and 5th objects need their positions in the load bar changed
+            /*
+            TODO: Write code here that iterates through the Load Bar and fixes all its problems
+          
+            Sprout and Zombie positions 
+            -465
+            -245
+            -18
+            155 (needs to be changed)
+            290 (needs to be changed)
 
-                The zombie head animation is also quite choppy 
-                 
-                */
-            }
+            The timing of the 4th and 5th object will also likely need to be changed to match the new positions
+
+            The zombie head animation is also quite choppy 
+
+            */
         }
     }
 }
