@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 using MelonLoader;
 
 namespace extra_polish.Fixes
@@ -17,7 +12,7 @@ namespace extra_polish.Fixes
 
         public static void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
-
+            
             if (sceneName != "Bootstrap") return; // Only run this code on the loading screen
 
             // Get the loading bar, and then its children
