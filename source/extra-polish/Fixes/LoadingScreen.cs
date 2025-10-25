@@ -12,7 +12,6 @@ namespace extra_polish.Fixes
 
         public static void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
-            
             if (sceneName != "Bootstrap") return; // Only run this code on the loading screen
 
             // Get the loading bar, and then its children
@@ -23,11 +22,13 @@ namespace extra_polish.Fixes
             UnityEngine.Animator[] Animators = LoadBar.GetComponentsInChildren<UnityEngine.Animator>();
 
             // Iterate through the loadbar components to find the ones that need fixing, and then fix them
+
+            Vector3 objPosition;
+
             foreach (UnityEngine.Animator LoadBarAnimator in Animators)
             {
                 var Xposition = LoadBarAnimator.gameObject.transform.localPosition.x;
-                Vector3 objPosition;
-
+                
                 switch (Xposition)
                 {
                     case 155:

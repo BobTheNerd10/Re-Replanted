@@ -467,6 +467,6 @@
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\PVZ Replanted\Mods&quot;" />
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\PVZ Replanted\Mods&quot;&#xD;&#xA;COPY &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\PVZ Replanted\Mods&quot;&#xD;&#xA;" />
 	</Target>
 </Project>
