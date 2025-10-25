@@ -4,10 +4,14 @@ This Repository is a series of bugfixes, QOL changes, and modded content for Pla
 Note: This project isn't made in ill-will. I understand that Replanted's development was insanely rushed and made by an inexperienced team. This project is just an attempt to make Replanted more appealing for modders.
 
 ## Project Structure
+<<<<<<< HEAD
 At the moment, this Repository contains one C# project.
 - Extra-Polish is the project dedicated to fixing all the oversights in the game. 
 
 More C# projects will be added as needed.
+=======
+This repositiory will be only used to the main project, the other projects will have separate repositories, and each repository will be linked here.
+>>>>>>> 7d16e54414aa5ae2baca5160cc5cf92f860089af
 
 ## How to Contribute
 The best place to go is the PvZ1 Modding Discord (linked below) to get in touch and see what needs to be done. However, you can also message me (BobTheNerd10) on Twitter, send me an e-mail, or (for programming only) create a GitHub pull request!
