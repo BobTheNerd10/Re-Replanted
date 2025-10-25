@@ -17,6 +17,8 @@ namespace extra_polish.Fixes
             // Get the loading bar, and then its children
             // NOTE: Apparently, it's better to iterate through gameobjects based on their components.
             // I think it's kinda silly, but whatevs, standards are standards
+
+            // TODO: This is returning null. Why?
             GameObject LoadBar = GameObject.Find("LoadBarAnimationParent");
 
             UnityEngine.Animator[] Animators = LoadBar.GetComponentsInChildren<UnityEngine.Animator>();
