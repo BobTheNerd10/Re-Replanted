@@ -9,8 +9,6 @@ At the moment, this Repository contains one C# project.
 
 More C# projects will be added as needed.
 
-This repositiory will only be used for the main project. Other relevant projects will have separate repositories, but will be linked here.
-
 ## How to Contribute
 The best place to go is the PvZ1 Modding Discord (linked below) to get in touch and see what needs to be done. However, you can also message me (BobTheNerd10) on Twitter, send me an e-mail, or (for programming only) create a GitHub pull request!
 
