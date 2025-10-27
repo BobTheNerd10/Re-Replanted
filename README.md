@@ -9,10 +9,14 @@ At the moment, this Repository contains one C# project.
 
 More C# projects will be added as needed.
 
-## How to Contribute
-The best place to go is the PvZ1 Modding Discord (linked below) to get in touch and see what needs to be done. However, you can also message me (BobTheNerd10) on Twitter, send me an e-mail, or (for programming only) create a GitHub pull request!
+## How to Help / Making Suggestions
+There are several different ways to help! And I greatly appreciate anyone who takes the time to! :D
+- To get in touch and see what needs to be done, go to the forum post for this project in the PvZ1 Modding Discord (linked below.) 
+- To suggest ideas/bug fixes for the project, either contact me or make a suggestion on the Google Sheet (also linked below!)
+- If you find a bug with the mod, either contacr me or create a github issue.
+- If you want to help code, either get in contact with me or create a GitHub pull request with your code changes!
 
-To suggest ideas for the project and report bugs, either get in contact with me or make a suggestion on the Google Sheet (linked below!)
+To contact me personally, you can message me (@BobTheNerd10) on Twitter or send me an e-mail! (BobTheNerd10@gmail.com) 
 
 ## Links
 [This spreadsheet](https://docs.google.com/spreadsheets/d/10N_Q6xMBUn9X6yh2J6AfADarAxr983ox4QMMI-m2s5A/edit?usp=sharing) is currently being used to track oversights that will be fixed in this project. It also stores a list of new content that will be added! (The new content will only be something typical for a remaster. There won't be any new plants, zombies, or worlds for example (with the exception of reimplemented features from the PvZ1 beta, and Chinese-exclusive content ported over.))
