@@ -1,4 +1,4 @@
-# Replanted-Improvements
+# Re-Replanted
 This Repository is a series of bugfixes, QOL changes, and modded content for Plants Vs. Zombies: Replanted! Hopefully turning it into the Remaster we never got!
 
 Note: This project isn't made in ill-will. I understand that Replanted's development was insanely rushed and made by an inexperienced team. This project is just an attempt to make Replanted more appealing for modders.
