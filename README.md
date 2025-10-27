@@ -7,7 +7,8 @@ Note: This project isn't made in ill-will. I understand that Replanted's develop
 At the moment, this Repository contains one C# project.
 - Extra-Polish is the project dedicated to fixing all the oversights in the game. 
 
-More C# projects will be added as needed.
+More C# projects will be added as needed. For the future, I'd like to split the project up into multiple mods so the user can easily enable-and-disable the mods they want. These are the planned mods at the moment:
+- WIP
 
 ## How to Help / Making Suggestions
 There are several different ways to help! And I greatly appreciate anyone who takes the time to! :D
