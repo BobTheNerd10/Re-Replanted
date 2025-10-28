@@ -12,7 +12,7 @@ More C# projects will be added as needed. For the future, I'd like to split the 
 
 ## How to Help / Making Suggestions
 There are several different ways to help! And I greatly appreciate anyone who takes the time to! :D
-- To get in touch and see what needs to be done, go to the forum post for this project in the PvZ1 Modding Discord (linked below.) 
+- To see what needs to be done, check out the [spreadsheet](https://docs.google.com/spreadsheets/d/10N_Q6xMBUn9X6yh2J6AfADarAxr983ox4QMMI-m2s5A/edit?usp=sharing) of Replanted's issues that need to be fixed! (It's also linked below.) You can also ask me personally (hi! im BobTheNerd10) or ask in the forum post titled "Mod(s) to fix PvZ Replanted" within the #mod-hub channel of the [PvZ1 Modders Association discord](https://discord.gg/cGBwQQaC7m).
 - To suggest ideas/bug fixes for the project, either contact me or make a suggestion on the Google Sheet (also linked below!)
 - If you find a bug with the mod, either contacr me or create a github issue.
 - If you want to help code, either get in contact with me or create a GitHub pull request with your code changes!
