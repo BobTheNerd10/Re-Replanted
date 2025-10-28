@@ -1,10 +1,10 @@
 ﻿using MelonLoader;
 
 
-[assembly: MelonInfo(typeof(extra_polish.Core), "extra-polish", "1.0.0", "Many people (TODO, FIX)", null)]
+[assembly: MelonInfo(typeof(core_fixes.Core), "rereplanted-core-fixes", "1.0.0", "BobTheNerd10", null)]
 [assembly: MelonGame("PopCap Games", "PvZ Replanted")]
 
-namespace extra_polish
+namespace core_fixes
 {
     public class Core : MelonMod
     {

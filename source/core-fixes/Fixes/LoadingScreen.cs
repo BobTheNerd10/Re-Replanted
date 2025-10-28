@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using MelonLoader;
 
-namespace extra_polish.Fixes
+namespace core_fixes.Fixes
 {
     internal static class LoadingScreen
     {

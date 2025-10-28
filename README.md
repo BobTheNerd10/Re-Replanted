@@ -1,26 +1,27 @@
 # Re-Replanted
-This Repository is a series of bugfixes, QOL changes, and modded content for Plants Vs. Zombies: Replanted! Hopefully turning it into the Remaster we never got!
+This project is a series of mods that implement bugfixes, QOL changes, and modded content for Plants Vs. Zombies: Replanted! 
+The goal is to make Replanted more "complete", hopefully turning it into the remaster we never got!
 
-Note: This project isn't made in ill-will. I understand that Replanted's development was insanely rushed and made by an inexperienced team. This project is just an attempt to make Replanted more appealing for modders.
+Note: This project isn't made in ill-will. I understand that Replanted's development was insanely rushed and made by an inexperienced team. This project is just an attempt to make Replanted more appealing for both modders and (disappointed) players.
 
 ## Project Structure
 At the moment, this Repository contains one C# project.
-- Extra-Polish is the project dedicated to fixing all the oversights in the game. 
+- Core-Fixes is the project dedicated to fixing all the oversights in the game. 
 
-More C# projects will be added as needed. For the future, I'd like to split the project up into multiple mods so the user can easily enable-and-disable the mods they want. These are the planned mods at the moment:
-- WIP
+More C# projects will be added as needed.
 
 ## How to Help / Making Suggestions
 There are several different ways to help! And I greatly appreciate anyone who takes the time to! :D
-- To see what needs to be done, check out the [spreadsheet](https://docs.google.com/spreadsheets/d/10N_Q6xMBUn9X6yh2J6AfADarAxr983ox4QMMI-m2s5A/edit?usp=sharing) of Replanted's issues that need to be fixed! (It's also linked below.) You can also ask me personally (hi! im BobTheNerd10) or ask in the forum post titled "Mod(s) to fix PvZ Replanted" within the #mod-hub channel of the [PvZ1 Modders Association discord](https://discord.gg/cGBwQQaC7m).
-- To suggest ideas/bug fixes for the project, either contact me or make a suggestion on the Google Sheet (also linked below!)
-- If you find a bug with the mod, either contacr me or create a github issue.
-- If you want to help code, either get in contact with me or create a GitHub pull request with your code changes!
+- For a To-do List, check out the [spreadsheet](https://docs.google.com/spreadsheets/d/10N_Q6xMBUn9X6yh2J6AfADarAxr983ox4QMMI-m2s5A/edit?usp=sharing) of Replanted's issues that need to be fixed! (It's also linked below.) 
+- To suggest ideas/bug fixes for the project, either contact me (see below), make a suggestion on the Google Spreadsheet, or create a GitHub issue! I'd love to hear your opinions, and the data is always useful! 
+- If you want to help code, it's best if you get in contact with me (see below), but you can also just create a GitHub pull request with your code changes! Pull requests made without my knowledge will likely take longer to be approved though unfortunately D:
 
-To contact me personally, you can message me (@BobTheNerd10) on Twitter or send me an e-mail! (BobTheNerd10@gmail.com) 
+To contact me personally (BobTheNerd10):
+- It's best if you send me an e-mail (BobTheNerd10@gmail.com) or talk to me personally over Discord! (My username is @BobTheNerd10, but it's preferable if you head to the [PvZ1 Modders Association discord](https://discord.gg/cGBwQQaC7m) in a post titled "Mod(s) to fix PvZ Replanted" in the #mod-hub forum. That's the main location for discussing the mod, and I'm quite active there!)
+- You can also message me on Reddit (u/BobTheNerd10) and Twitter (@BobTheNerd10), but I'm less active in those places, so I might miss you :<
 
-## Links
-[This spreadsheet](https://docs.google.com/spreadsheets/d/10N_Q6xMBUn9X6yh2J6AfADarAxr983ox4QMMI-m2s5A/edit?usp=sharing) is currently being used to track oversights that will be fixed in this project. It also stores a list of new content that will be added! (The new content will only be something typical for a remaster. There won't be any new plants, zombies, or worlds for example (with the exception of reimplemented features from the PvZ1 beta, and Chinese-exclusive content ported over.))
-
-At the moment, all discussion related to this project is happening in the [PvZ1 Modders Association discord](https://discord.gg/cGBwQQaC7m) in a post titled "Mod(s) to fix PvZ Replanted" in the #mod-hub forum. However, this project may get its own discord one day!
-
+## Credits
+- BobTheNerd10 (Lead Developer)
+- UseR (Lead Developer)
+- HenHen (Developer of the Replant API)
+- Several bug finders! Their names have been witheld for privacy, but major bug finders will be included in the in-game credits.

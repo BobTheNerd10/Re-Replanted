@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extra-polish", "extra-polish\extra-polish.csproj", "{7BD66BAA-084F-469F-8BDA-A43422CD5C7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core-fixes", "source\core-fixes\core-fixes.csproj", "{7BD66BAA-084F-469F-8BDA-A43422CD5C7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
