@@ -4,6 +4,8 @@ The goal is to make Replanted more "complete", hopefully turning it into the rem
 
 Note: This project isn't made in ill-will. I understand that Replanted's development was insanely rushed and made by an inexperienced team. This project is just an attempt to make Replanted more appealing for both modders and (disappointed) players.
 
+Note: The name is TBD
+
 ## Project Structure
 At the moment, this Repository contains one C# project.
 - Core-Fixes is the project dedicated to fixing all the oversights in the game. 
