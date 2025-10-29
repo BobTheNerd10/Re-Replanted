@@ -8,9 +8,20 @@ Note: The name is TBD
 
 ## Project Structure
 At the moment, this Repository contains one C# project.
-- Core-Fixes is the project dedicated to fixing all the oversights in the game. 
+- **Core-Fixes** is the project dedicated to fixing all the oversights in the game. 
 
-More C# projects will be added as needed.
+More projects will also be added as needed. The reason they're divided like this is so they're available as separate DLL files. 
+- **Polish**
+- **Minor QOL changes** 
+- **Major QOL changes** 
+- **Texture packs** 
+- **Expanded concept art menu**
+- **Reimplementing old and unused content** 
+- **Version exclusive content** 
+- **China exclusive content** 
+- **Reworked RIP mode**
+- **Content to make the game more complete**
+- And then finally, **Cheats and debug menu access** (although it isnt included in the download by default)
 
 ## How to Help / Making Suggestions
 There are several different ways to help! And I greatly appreciate anyone who takes the time to! :D
