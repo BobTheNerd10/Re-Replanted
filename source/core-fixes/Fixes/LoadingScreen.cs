@@ -1,63 +1,77 @@
 ﻿using UnityEngine;
 using MelonLoader;
+using Il2CppTekly;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
 
 namespace core_fixes.Fixes
 {
     internal static class LoadingScreen
     {
+        /*
+            Changes Implemented:
+            
+            Changing the positions of the sprout and zombie head on the loading screen to their correct positions 
+            (And also retiming the animations to match their new positions)
+         
+        */
+
+
         public static void Implement()
         {
+            // Fix the loading bar's visuals for the 4th and 5th objects (sprout and zombie head)
             MelonEvents.OnSceneWasLoaded.Subscribe(OnSceneWasLoaded);
         }
 
-        public static void OnSceneWasLoaded(int buildIndex, string sceneName)
+        // For fixing the loading bar's visuals for the 4th and 5th objects (sprout and zombie head)
+        private static void OnSceneWasLoaded(int _buildIndex, string sceneName)
         {
-            if (sceneName != "Bootstrap") return; // Only run this code on the loading screen
+            // Only run this code on the loading screen
+            if (sceneName != "Bootstrap") return;
 
-            // Get the loading bar, and then its children
-            // NOTE: Apparently, it's better to iterate through gameobjects based on their components.
-            // I think it's kinda silly, but whatevs, standards are standards
+            // Get The PanelViewContainer game obejct. It contains all the objects that are rendered to the screen
+            var PanelViewContainer = GameObject.FindFirstObjectByType<Il2CppTekly.PanelViews.PanelViewContainer>();
+            if (PanelViewContainer == null) { MelonLogger.Error("PanelViewContainer not found!"); return; }
 
-            // TODO: This is returning null. Why?
-            GameObject LoadBar = GameObject.Find("LoadBarAnimationParent");
+            Il2CppArrayBase<UnityEngine.Animator> LoadBarAnimatorComponents = PanelViewContainer.GetComponentsInChildren<UnityEngine.Animator>();
 
-            UnityEngine.Animator[] Animators = LoadBar.GetComponentsInChildren<UnityEngine.Animator>();
+            MelonLogger.Msg(LoadBarAnimatorComponents.Count);
 
-            // Iterate through the loadbar components to find the ones that need fixing, and then fix them
 
-            Vector3 objPosition;
+            Transform childTransform;
 
-            foreach (UnityEngine.Animator LoadBarAnimator in Animators)
+            // Iterate through the loadbar's child object's components to find the objects with "Animator" components. (IE, what we need)
+            foreach (var LoadBarAnimatorComponent in LoadBarAnimatorComponents)
             {
-                var Xposition = LoadBarAnimator.gameObject.transform.localPosition.x;
-                
-                switch (Xposition)
+
+                childTransform = LoadBarAnimatorComponent.gameObject.transform;
+
+                // If child doesn't have the animator component, check next one (because only sprouts and the zombie head have it) 
+                if (!childTransform.TryGetComponent<Animator>(out _)) continue;
+
+                // Fix the X positions
+                switch (childTransform.localPosition.x)
                 {
                     case 155:
-                        MelonLogger.Msg("Implementing sprout fix...");
-                        objPosition = LoadBarAnimator.gameObject.transform.localPosition;
-                        objPosition.x = 185; // Change to the correct position
-                        LoadBarAnimator.gameObject.transform.localPosition = objPosition;
-
+                        // Change to the correct position (It needs to be done this way because
+                        //   Unity is stupid and doesn't let you modify the xyz values directly)
+                        childTransform.localPosition = new Vector3(185, childTransform.localPosition.y, childTransform.localPosition.z);
                         break;
 
                     case 290:
-                        MelonLogger.Msg("Implementing head fix...");
-                        objPosition = LoadBarAnimator.gameObject.transform.localPosition;
-                        objPosition.x = 400; // Change to the correct position
-                        LoadBarAnimator.gameObject.transform.localPosition = objPosition;
-
+                        // Change to the correct position (It needs to be done this way because
+                        //   Unity is stupid and doesn't let you modify the xyz values directly)
+                        childTransform.localPosition = new Vector3(185, childTransform.localPosition.y, childTransform.localPosition.z);
                         break;
                 }
-            }
-            /*
-            TODO: Write code here that iterates through the Load Bar and fixes all its problems
+
+                /*
          
-            The timing of the 4th and 5th object will also likely need to be changed to match the new positions
+                The timing of the 4th and 5th object will also likely need to be changed to match the new positions
 
-            The zombie head animation is also quite choppy 
+                The zombie head animation is also quite choppy 
 
-            */
+                */
+            }
         }
     }
 }
