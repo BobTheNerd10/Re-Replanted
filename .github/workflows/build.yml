@@ -1,0 +1,31 @@
+name: Build on Windows
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build on Windows
+    runs-on: windows-2025
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install .NET SDK via Chocolatey
+        shell: pwsh
+        run: |
+          choco install dotnet-6.0-sdk -y
+
+      - name: Restore NuGet Packages & Build
+        shell: pwsh
+        run: |
+          dotnet restore source.sln
+          dotnet build source.sln -c Release
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Binaries
+          path: |
+            **/bin/Release/
